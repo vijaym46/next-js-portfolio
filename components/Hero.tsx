@@ -1,4 +1,3 @@
-import React from 'react'
 import { Spotlight } from '@/components/ui/spotlight'
 import { cn } from '@/lib/utils'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
@@ -14,7 +13,7 @@ const Hero = () => {
         <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='blue' />
       </div>
 
-      <div className="absolute top-0 left-0 flex h-screen w-full bg-white dark:bg-black-100 items-center justify-center">
+      <div className="h-screen w-full bg-white dark:bg-black-100 absolute top-0 left-0 flex items-center justify-center">
         <div
           className={cn(
             "absolute inset-0",
@@ -32,10 +31,8 @@ const Hero = () => {
             Dynamic Web Magic with React.js
           </h2>
           <TextGenerateEffect 
-            className='text-center text-[40px] md:text-4xl lg:text-5xl'
             words='Transforming Concepts into Seamless User Experiences'
-            // duration={1}
-            // filter={false}
+            className='text-center text-3xl md:text-4xl lg:text-5xl'
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
